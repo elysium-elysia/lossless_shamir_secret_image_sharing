@@ -95,6 +95,6 @@ pip install pycryptodome
 
 ## 算法分析
 
-![image-20231113001057468](C:\Users\liusir\AppData\Roaming\Typora\typora-user-images\image-20231113001057468.png)
+![image-redundancy.png](.\pic\redundancy.png)
 
 由于采用用空间换时间的策略，该算法有较高的运行效率。但影子图像本身的大小却由于冗余项的增加，变为原来图像的8倍左右。
