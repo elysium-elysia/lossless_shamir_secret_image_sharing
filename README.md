@@ -40,3 +40,47 @@ def redundancy(imgs):#往影子图像中加冗余保证无损图像秘密共享�
 ```
 
 此外，由于jpg 等有损图像储存格式会导致像素值缺失，因此影子图像的存取得使用 png 格式。（原图像的选取和最终还原图像的保存不受影响）
+## 依赖项
+
+- Python 3.x
+- numpy
+- pillow
+- pycryptodome
+
+
+
+## 使用方法
+
+由于本人太懒（），本算法并未实现图形化界面或任何命令的绑定，运行后按照终端提示输入即可。
+
+## 对比实验
+
+下列采用消融实验展现该算法在图像还原方面的优势。
+
+下面四张图分别为原图、模251结果图、模257结果图和无损算法实现图。三张恢复结果图都采用同样的(5,10)门限方案，并都选取影子图像2、3、6、7、9来恢复原图像。
+
+![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps1.jpg) 
+
+原图
+
+![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps2.jpg) 
+
+模251结果图像（即原算法生成结果）
+
+![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps3.jpg) 
+
+模257结果图像（只修改了大素数P的值）
+
+![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps4.jpg) 
+
+ 
+
+实现无损秘密共享结果图像
+
+从这四幅图显著地展示出本算法无损图像压缩的优势，能准确地还原出原图，不存在失真情况。
+
+## 算法分析
+
+![image-20231113001057468](C:\Users\liusir\AppData\Roaming\Typora\typora-user-images\image-20231113001057468.png)
+
+由于采用用空间换时间的策略，该算法有较高的运行效率。但影子图像本身的大小却由于冗余项的增加，变为原来图像的8倍左右。
