@@ -73,21 +73,19 @@ pip install pycryptodome
 
 下面四张图分别为原图、模251结果图、模257结果图和无损算法实现图。三张恢复结果图都采用同样的(5,10)门限方案，并都选取影子图像2、3、6、7、9来恢复原图像。
 
-![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps1.jpg) 
+![img](https://picdm.sunbangyan.cn/2023/11/13/e4ec279c2d93f201e53ba636d6a223dd.png) 
 
 原图
 
-![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps2.jpg) 
+![img](https://picdm.sunbangyan.cn/2023/11/13/52234851ba3ec16d5c60743bdad64208.png) 
 
 模251结果图像（即原算法生成结果）
 
-![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps3.jpg) 
+![img](https://picdm.sunbangyan.cn/2023/11/13/40a060fb9f6a868a47831213a8824bcb.png) 
 
 模257结果图像（只修改了大素数P的值）
 
-![img](file:///C:\Users\liusir\AppData\Local\Temp\ksohtml155576\wps4.jpg) 
-
- 
+![img](https://picst.sunbangyan.cn/2023/11/13/663ef59d57e20b77de85f6c69fd50e33.png) 
 
 实现无损秘密共享结果图像
 
@@ -95,6 +93,6 @@ pip install pycryptodome
 
 ## 算法分析
 
-![img](.\pic\redundancy.png)
+![img](https://picst.sunbangyan.cn/2023/11/13/c275d32585e5639ce98c682719ab0b39.png)
 
 由于采用用空间换时间的策略，该算法有较高的运行效率。但影子图像本身的大小却由于冗余项的增加，变为原来图像的8倍左右。
