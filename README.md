@@ -85,7 +85,7 @@ pip install pycryptodome
 
 模257结果图像（只修改了大素数P的值）
 
-![img](https://picst.sunbangyan.cn/2023/11/13/663ef59d57e20b77de85f6c69fd50e33.png) 
+![img](https://picss.sunbangyan.cn/2023/11/13/ad5dad0ec8acb4de8d81529215294713.png) 
 
 实现无损秘密共享结果图像
 
