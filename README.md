@@ -46,8 +46,21 @@ def redundancy(imgs):#往影子图像中加冗余保证无损图像秘密共享�
 - numpy
 - pillow
 - pycryptodome
+你可以使用如下命令安装所需的包：
 
+```
+pip install -r requirements
+```
 
+但要注意的是，由于crypto库的混乱性，crypto库导入可能存在问题。如果显示导入报错，先卸载安装过的所有的crypto模块（pip list，看一看带crypto名字的，全都pip uninstall xxx）。
+
+全部卸载干净后，再重新执行上述命令或执行：
+
+```
+pip install pycryptodome
+```
+
+如果已经安装过pycryptodome，也要卸载，不然依然可能报错。必须卸载完所有安装的crypto模块，最后安装pycryptodome。
 
 ## 使用方法
 
